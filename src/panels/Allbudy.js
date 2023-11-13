@@ -4,7 +4,7 @@ import { Panel, PanelHeader, Header, Group, SimpleCell } from "@vkontakte/vkui";
 const Allbudy = () => {
     
 return(
-<Panel id="block1" style={{backgroundColor:"#7B7B7B"}}>
+<Panel id="Allbudy" style={{backgroundColor:"#7B7B7B"}}>
       <PanelHeader>
       <p style={{display:"flex",justifyContent:"left"}}>Тренировки</p>  
       </PanelHeader>

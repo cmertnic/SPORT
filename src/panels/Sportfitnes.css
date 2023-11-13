@@ -1,0 +1,22 @@
+.up_panel{
+    display: flex;
+    justify-content: space-between;
+}
+.musckle_img{
+    width: 60px;
+    height: 60px;
+    padding-right: 15px;
+}
+.down_panel{
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 10px;
+}
+.grey_heart{
+    border: none;
+}
+.grey_heart:hover{
+cursor: pointer;
+}

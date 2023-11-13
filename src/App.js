@@ -12,6 +12,7 @@ import {
 import "@vkontakte/vkui/dist/vkui.css";
 
 import Sportfitnes from "./panels/Sportfitnes";
+import Allbudy from "./panels/Allbudy";
 
 const App = () => {
   const [activePanel, setActivePanel] = useState("home");

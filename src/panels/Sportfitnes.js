@@ -1,27 +1,73 @@
 import React, { useState } from "react";
-import { Panel, PanelHeader, Header, Group, SimpleCell } from "@vkontakte/vkui";
+import { Panel, PanelHeader, Header, Group, SimpleCell, Radio, Checkbox } from "@vkontakte/vkui";
+import './Sportfitnes.css'
+import GrayHeart from './../img/Gray_heart.svg'
+import Lesson from './../img/Lesson1.png'
+import { useActiveVkuiLocation, useRouteNavigator } from "@vkontakte/vk-mini-apps-router";
+
+export function App(){
+  const{ view:activeView, panel:activePanel}=useActiveVkuiLocation();
+
+  return(
+    <Root activeView={activeView|DEFAULT_VIEW}>
+      <View nav="default_view" activePanel={activePanel|DEFAULT_PANEL}>
+        <Panel nav="home">...</Panel>
+        <Panel nav="Allbudy">...</Panel>
+      </View>
+
+    </Root>
+  )
+}
+
+export function PersikPage (){
+
+  const routeNavigator = useRouteNavigator();
+
+  return(
+<Button onClick={()=> routeNavigator.push('/')}>На главную</Button>
+  );
+}
+
 
 const Sportfitnes = () => {
-
-
+   
+ 
   return (
     <Panel id="home" style={{backgroundColor:"#7B7B7B"}}>
       <PanelHeader>
-      <p style={{display:"flex",justifyContent:"left"}}>Тренировки</p>  
+      <p style={{display:"flex",justifyContent:"left"}}>
+        Тренировки
+        </p>  
       </PanelHeader>
       <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B", }} 
       header={<Header mode="primary">Тренировки для всего тела</Header>}>
+        <div className="up_panel">
+         
         <div>
         <p>упражнений: 7</p>
+        
+        </div> 
+         <div className="musckle_img">
+      <img  src={Lesson} alt="Lesson1" />
+      </div>        
         </div>
+     
       <div>
-        <p>Махи (гантелями)</p>
-        <p>Выпад (гантелями)</p>
+        <p>Махи (гантели)</p>
+        <p>Выпад (гантели)</p>
         <p>Внешние вращение (гантели)</p>
-      </div>
-      <div style={{ display:"flex", justifyContent:"right" }}>
-      <SimpleCell>{"Смотреть всё"}</SimpleCell>   
-      </div>
+      </div>        
+
+
+
+<div className="down_panel">
+  <img  src={GrayHeart} alt="grey heart" id="GrayHeart" className="grey_heart" />
+   <SimpleCell><a href="#/Allbudy">{"Смотреть всё"}</a></SimpleCell>   
+</div>
+
+   
+
+
       </Group>
 
       <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}} 
@@ -34,8 +80,8 @@ const Sportfitnes = () => {
         <p>Жим штанги под наклоном (гантели)</p>
         <p>Подъем на бицепс (гантели)</p>
       </div>
-      <div style={{ display:"flex", justifyContent:"right" }}>
-      <SimpleCell>{"Смотреть всё"}</SimpleCell>   
+      <div className="img_down_panel" style={{ display:"flex", justifyContent:"right" }}>
+      <SimpleCell className="">{"Смотреть всё"}</SimpleCell>   
       </div>
       </Group>
 
