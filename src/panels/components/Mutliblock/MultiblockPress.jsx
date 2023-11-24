@@ -1,18 +1,38 @@
+import React, { useState } from "react";
+import { Group, Button, Header,} from "@vkontakte/vkui";
+import "./Multiblok.css"
+import Pres from '../../../img/Chest.png'
+const Press = ({go}) =>{
+    return(
+        <Group
+        style={{ marginInline: 20, paddingTop: 20, background: "#7B7B7B" }}
+        header={<Header mode="primary">Тренировки для пресса</Header>}
+      >
+        <div className="up_panel">
+          <div>
+            <p>упражнений: 7</p>
+          </div>
+          <div>
+            <img className="musckle_img" src={Pres} alt="Pres" />
+          </div>
+        </div>
 
-// <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}} 
-// header={<Header mode="primary">Тренировки для верхней группы мышц</Header>}>
-//   <div>
-//   <p>упражнений: 6</p>
-//   </div>
-// <div>
-//   <p>Французский жим лежа (гантели)</p>
-//   <p>Жим штанги под наклоном (гантели)</p>
-//   <p>Подъем на бицепс (гантели)</p>
-// </div>
-// <div className="img_down_panel" style={{ display:"flex", justifyContent:"right" }}>
-// <SimpleCell className="">{"Смотреть всё"}</SimpleCell>   
-// </div>
-// </Group>
+        <div>
+        <p>Скручивание с подъемом колен</p>
+        <p>Складка с подтягиванием ног</p>
+        <p>Шаги из планки в четвереньки</p>
+        </div>
+
+        <div className="down_panel">
+          <Button onClick={go} data-to="pres1">
+            Смотреть всё
+          </Button>
+        </div>
+      </Group>  
+    )
+}
+
+export default Press;
 
 // <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}} 
 // header={<Header mode="primary">Тренировки для Плечь</Header>}>
@@ -66,9 +86,9 @@
 //   <p>упражнений: 6</p>
 //   </div>
 // <div>
-//   <p>Скручивание с подъемом колен</p>
-//   <p>Складка с подтягиванием ног</p>
-//   <p>Шаги из планки в четвереньки</p>
+  // <p>Скручивание с подъемом колен</p>
+  // <p>Складка с подтягиванием ног</p>
+  // <p>Шаги из планки в четвереньки</p>
 // </div>
 // <div style={{ display:"flex", justifyContent:"right" }}>
 // <SimpleCell>{"Смотреть всё"}</SimpleCell>   

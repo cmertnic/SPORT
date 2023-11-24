@@ -1,0 +1,10 @@
+.qwerty{
+    background-color: #D9D9D9;
+    width: 312px;
+    height: 65px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+    margin: 5px;
+    align-items: center;
+}

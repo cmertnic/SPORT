@@ -1,19 +1,38 @@
+import React, { useState } from "react";
+import { Group, Button, Header,} from "@vkontakte/vkui";
+import "./Multiblok.css"
+import lowers from '../../../img/Legs.png'
+const Lower = ({go}) =>{
+    return(
+        <Group
+        style={{ marginInline: 20, paddingTop: 20, background: "#7B7B7B" }}
+        header={<Header mode="primary">Тренировки для нижней группы мышц</Header>}
+      >
+        <div className="up_panel">
+          <div>
+            <p>упражнений: 7</p>
+          </div>
+          <div>
+            <img className="musckle_img" src={lowers} alt="lowers" />
+          </div>
+        </div>
 
-// <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}} 
-// header={<Header mode="primary">Тренировки для верхней группы мышц</Header>}>
-//   <div>
-//   <p>упражнений: 6</p>
-//   </div>
-// <div>
-//   <p>Французский жим лежа (гантели)</p>
-//   <p>Жим штанги под наклоном (гантели)</p>
-//   <p>Подъем на бицепс (гантели)</p>
-// </div>
-// <div className="img_down_panel" style={{ display:"flex", justifyContent:"right" }}>
-// <SimpleCell className="">{"Смотреть всё"}</SimpleCell>   
-// </div>
-// </Group>
+        <div>
+        <p>Приседания у стены</p>
+        <p>Подъёмы на носки</p>
+        <p>Приседания с вытянутыми вперёд руками</p>
+        </div>
 
+        <div className="down_panel">
+          <Button onClick={go} data-to="lowermuscle1">
+            Смотреть всё
+          </Button>
+        </div>
+      </Group>  
+    )
+}
+
+export default Lower;
 // <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}} 
 // header={<Header mode="primary">Тренировки для Плечь</Header>}>
 //   <div>
@@ -82,9 +101,9 @@
 //   <p>упражнений: 7</p>
 //   </div>
 // <div>
-//   <p>Ягодичный мост</p>
-//   <p>Боковой подъём ног лежа</p>
-//   <p>Махи назад</p>
+  // <p>Ягодичный мост</p>
+  // <p>Боковой подъём ног лежа</p>
+  // <p>Махи назад</p>
 // </div>
 // <div style={{ display:"flex", justifyContent:"right" }}>
 // <SimpleCell>{"Смотреть всё"}</SimpleCell>   

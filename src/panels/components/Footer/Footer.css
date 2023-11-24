@@ -1,0 +1,21 @@
+.footer_img:hover{
+    background-color: #555454;
+    cursor: pointer;
+}
+.Sticky_footer{
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.footer_img{
+    display: flex;
+    width: 33.3%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.color_footer_img{
+    background-color: #a7a7a7;
+}

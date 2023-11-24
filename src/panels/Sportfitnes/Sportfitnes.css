@@ -1,0 +1,17 @@
+.up_panel{
+    display: flex;
+    justify-content: space-between;
+}
+.down_panel{
+    display: flex;
+    height: 20px;
+    justify-content: right;
+    padding-block: 10px;
+}
+.grey_heart{
+    border: none;
+}
+.grey_heart:hover{
+cursor: pointer;
+}
+
