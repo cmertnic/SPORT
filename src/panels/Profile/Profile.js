@@ -1,3 +1,5 @@
+import Qwerty from './../components/Modal1/Open1.jsx'
+
 import React, { useState } from "react";
 import PropTypes from 'prop-types';
 import {
@@ -34,13 +36,14 @@ import Footer2 from "../components/Footer/FooterP";
 // }
 const Prof = ({ go, fetchedUser }) => {
   return (
-    <Panel id="profile" style={{ backgroundColor: "#7B7B7B" }}>
+    <Panel className="panel-back" id="profile">
       <PanelHeader>
         <p style={{ display: "flex", justifyContent: "left" }}>Профиль</p>
       </PanelHeader>
 
       <Group
-        style={{ marginInline: 20, paddingTop: 20, background: "#7B7B7B" }}>     
+
+        style={{ marginInline: 20, paddingTop: 20}}>     
         <Cell
 				before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null}
 				subtitle={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}>
@@ -82,14 +85,7 @@ const Prof = ({ go, fetchedUser }) => {
               borderBottomRightRadius: 5,
             }}
           >
-            {/* Диаграмма */}
-            <div
-              style={{ display: "flex", alignItems: "center", marginTop: 20 }}
-            >
-              <div
-                style={{ background: "gray", width: 164, height: 164 }}
-              ></div>
-            </div>
+            
 
             {/* Статистика */}
             <div
@@ -101,8 +97,9 @@ const Prof = ({ go, fetchedUser }) => {
                 height: 345,
               }}
             >
+
               <p>Пройдено занятий: 3</p>
-              <p>Выполненно упрожнений: 18</p>
+              <p>Выполненно упражнений: 18</p>
             </div>
           </div>
         </div>

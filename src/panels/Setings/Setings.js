@@ -14,11 +14,14 @@ import {
   Button,
 } from "@vkontakte/vkui";
 import "./../hub.css";
-import "./Setings.css";
+import "..//Setings/Setings.css";
 import Footer3 from "../components/Footer/FooterS";
 const Sett = ({ go }) => {
+
+  
+
   return (
-    <Panel id="settings" style={{ backgroundColor: "#7B7B7B" }}>
+    <Panel className="panel-back" id="settings">
       <View activePanel="switch">
         <Panel id="switch">
           <PanelHeader>Настройки</PanelHeader>
@@ -43,13 +46,29 @@ const Sett = ({ go }) => {
 
           <Group>
             <p>Музыка</p>
-
-            
+            {/* <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label> */}
           </Group>
         </Panel>
       </View>
       <Footer3 go={go} />
     </Panel>
   );
+
+      
+  // function GO(){
+  //   $('.switch-btn').click(function(){
+  //     $(this).toggleClass('switch-on');
+  //     if ($(this).hasClass('switch-on')) {
+  //       $(this).trigger('on.switch');
+  //     } else {
+  //       $(this).trigger('off.switch');
+  //     }
+  //   });
+  // }
 };
+
+
 export default Sett;

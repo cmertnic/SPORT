@@ -5,11 +5,11 @@ import back from '../../../img/Back.png'
 const Back = ({go}) =>{
     return(
         <Group
-        style={{ marginInline: 20, paddingTop: 20, background: "#7B7B7B" }}
-        header={<Header mode="primary">Тренировки для мышц спины</Header>}
+        style={{ marginInline: 20, paddingTop: 20, marginBottom: 10, }}
+        header={<Header mode="primary" className="marginMain">Тренировки для мышц спины</Header>}
       >
         <div className="up_panel">
-          <div>
+          <div className="margin">
             <p>упражнений: 6</p>
           </div>
           <div>
@@ -17,14 +17,14 @@ const Back = ({go}) =>{
           </div>
         </div>
 
-        <div>
+        <div className="margin">
         <p>Подтягивания</p>
         <p>Тяга гантели одной рукой в наклоне</p>
         <p>Пожимания плечами (гантели)</p>
         </div>
 
         <div className="down_panel">
-          <Button onClick={go} data-to="back1">
+          <Button onClick={go} data-to="back1" className="MainBt">
             Смотреть всё
           </Button>
         </div>

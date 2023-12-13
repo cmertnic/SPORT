@@ -8,3 +8,17 @@
     margin: 5px;
     align-items: center;
 }
+.Modal_button{
+    background: #094204;
+    size: l;
+}
+.Modal_button:hover{
+    background-color:#094204;
+    
+}
+.Panel{
+    height: 850px;
+}
+.panel-back{
+    background: url("../../img/background.svg")
+}

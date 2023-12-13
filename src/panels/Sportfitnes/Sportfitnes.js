@@ -25,20 +25,20 @@ import Lower from "../components/Mutliblock/MultiblockLowermuscle";
 import Press from "../components/Mutliblock/MultiblockPress";
 import Shoulders from "../components/Mutliblock/MultiblockShoulders";
 import Calf from "../components/Mutliblock/MultiblockСalfmuscles";
-
+import Background from "../../img/background.svg";
 const Sportfitnes = ({ go }) => {
   return (
-    <Panel id="home" style={{ backgroundColor: "#7B7B7B" }}>
+    <Panel id="home" className="panel-back" style={{ backgroundImage: Background }}>
       <PanelHeader>
         <p style={{ display: "flex", justifyContent: "left" }}>Тренировки</p>
       </PanelHeader>
       <FullBody go={go} />
+      <Shoulders go={go} />      
       <Arms go={go} />
       <Back go={go} />
-      <Buttocks go={go} />
-      <Lower go={go} />
       <Press go={go} />
-      <Shoulders go={go} />
+      <Lower go={go} />
+      <Buttocks go={go} />      
       <Calf go={go} />
       <Footer1 go={go} />
     </Panel>

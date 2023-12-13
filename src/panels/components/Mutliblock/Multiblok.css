@@ -3,3 +3,15 @@
     height: 60px;
     padding-right: 15px;
 }
+
+.marginMain{
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+.margin{
+    margin-left: 25px;
+}
+.MainBt{
+    margin-right: 15px;
+}

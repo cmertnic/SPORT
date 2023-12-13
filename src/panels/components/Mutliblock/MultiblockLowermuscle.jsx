@@ -5,11 +5,11 @@ import lowers from '../../../img/Legs.png'
 const Lower = ({go}) =>{
     return(
         <Group
-        style={{ marginInline: 20, paddingTop: 20, background: "#7B7B7B" }}
-        header={<Header mode="primary">Тренировки для нижней группы мышц</Header>}
+        style={{ marginInline: 20, paddingTop: 20, marginBottom: 10 }}
+        header={<Header mode="primary" className="marginMain">Тренировки для нижней группы мышц</Header>}
       >
         <div className="up_panel">
-          <div>
+          <div className="margin">
             <p>упражнений: 7</p>
           </div>
           <div>
@@ -17,14 +17,14 @@ const Lower = ({go}) =>{
           </div>
         </div>
 
-        <div>
+        <div className="margin">
         <p>Приседания у стены</p>
         <p>Подъёмы на носки</p>
         <p>Приседания с вытянутыми вперёд руками</p>
         </div>
 
         <div className="down_panel">
-          <Button onClick={go} data-to="lowermuscle1">
+          <Button onClick={go} data-to="lowermuscle1" className="MainBt">
             Смотреть всё
           </Button>
         </div>

@@ -5,11 +5,11 @@ import Pres from '../../../img/Chest.png'
 const Press = ({go}) =>{
     return(
         <Group
-        style={{ marginInline: 20, paddingTop: 20, background: "#7B7B7B" }}
-        header={<Header mode="primary">Тренировки для пресса</Header>}
+        style={{ marginInline: 20, paddingTop: 20, marginBottom: 10  }}
+        header={<Header mode="primary" className="marginMain">Тренировки для пресса</Header>}
       >
         <div className="up_panel">
-          <div>
+          <div className="margin">
             <p>упражнений: 7</p>
           </div>
           <div>
@@ -17,14 +17,14 @@ const Press = ({go}) =>{
           </div>
         </div>
 
-        <div>
+        <div className="margin">
         <p>Скручивание с подъемом колен</p>
         <p>Складка с подтягиванием ног</p>
         <p>Шаги из планки в четвереньки</p>
         </div>
 
         <div className="down_panel">
-          <Button onClick={go} data-to="pres1">
+          <Button onClick={go} data-to="pres1" className="MainBt">
             Смотреть всё
           </Button>
         </div>

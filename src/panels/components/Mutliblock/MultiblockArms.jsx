@@ -5,11 +5,11 @@ import "./Multiblok.css"
 const Arms = ({go}) =>{
     return(
         <Group
-        style={{ marginInline: 20, paddingTop: 20, background: "#7B7B7B" }}
-        header={<Header mode="primary">Тренировка для рук</Header>}
+        style={{ marginInline: 20, paddingTop: 20, marginBottom: 10}}
+        header={<Header mode="primary" className="marginMain">Тренировка для рук</Header>}
       >
 <div className="up_panel">
-          <div>
+          <div className="margin">
             <p>упражнений: 7</p>
           </div>
           <div>
@@ -17,14 +17,14 @@ const Arms = ({go}) =>{
           </div>
         </div>
 
-<div>
+<div className="margin">
   <p>отжимания от скамьи</p>
   <p>планка на коленях с подъемом рук к плечам</p>
   <p>сгибания и разгибания запястий</p>
 </div>
 
         <div className="down_panel">
-          <Button onClick={go} data-to="arms1">
+          <Button onClick={go} data-to="arms1" className="MainBt">
             Смотреть всё
           </Button>
         </div>

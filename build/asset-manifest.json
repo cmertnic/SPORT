@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ae3684a6.css",
+    "main.js": "/static/js/main.8f287647.js",
+    "static/media/rezinka_most.gif": "/static/media/rezinka_most.3c3982e4fd3d0e6401c2.gif",
+    "static/media/planka.gif": "/static/media/planka.015c5e7de7eb7c78da79.gif",
+    "static/media/prisedsvipadom.gif": "/static/media/prisedsvipadom.fcf8cdd1106d6f14a45e.gif",
+    "static/media/uprazhnenie-berpi-vashsport.com_.gif": "/static/media/uprazhnenie-berpi-vashsport.com_.968b58aabfa97d0a20a9.gif",
+    "static/media/prisedsvitrukami.gif": "/static/media/prisedsvitrukami.ed3aec6b11841a8d50ff.gif",
+    "static/media/background.svg": "/static/media/background.842478674de7d79da1985d278883516a.svg",
+    "static/media/maxinogami.gif": "/static/media/maxinogami.ced81818d10e3be87505.gif",
+    "static/media/tiagabedro.gif": "/static/media/tiagabedro.7ce8cab5f341cf440721.gif",
+    "static/media/Buts.png": "/static/media/Buts.3df727cf8d97f6b7fe97.png",
+    "static/media/Arm.png": "/static/media/Arm.5f9ac27080839541790a.png",
+    "static/media/Back.png": "/static/media/Back.222a99992ca7c7ea6dca.png",
+    "static/media/Shoulders.png": "/static/media/Shoulders.36b84fdc5dd909173ab6.png",
+    "static/media/Legs.png": "/static/media/Legs.5291f7000031a53337bb.png",
+    "static/media/Settings.svg": "/static/media/Settings.a3e0c765af261d95672137a4115a6293.svg",
+    "static/media/Profile.svg": "/static/media/Profile.d09dd410e27f8ef6cf9848c1312b8feb.svg",
+    "static/media/Home.svg": "/static/media/Home.a025433764d63b3216ec3a2fb9f604e4.svg",
+    "index.html": "/index.html",
+    "main.ae3684a6.css.map": "/static/css/main.ae3684a6.css.map",
+    "main.8f287647.js.map": "/static/js/main.8f287647.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae3684a6.css",
+    "static/js/main.8f287647.js"
+  ]
+}

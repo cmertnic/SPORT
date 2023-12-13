@@ -10,7 +10,6 @@ import {
   SplitCol,
 } from "@vkontakte/vkui";
 import "@vkontakte/vkui/dist/vkui.css";
-
 import Sportfitnes from "./panels/Sportfitnes/Sportfitnes";
 import Sett from "./panels/Setings/Setings";
 import Prof from "./panels/Profile/Profile";
@@ -28,7 +27,8 @@ const App = () => {
   const [activePanel, setActivePanel] = useState("home");
   const [fetchedUser, setUser] = useState(null);
   const [popout, setPopout] = useState(<ScreenSpinner size="large" />);
-
+  
+  
   useEffect(() => {
     async function fetchData() {
       const user = await bridge.send("VKWebAppGetUserInfo");
@@ -50,7 +50,7 @@ const App = () => {
             <SplitCol>
               <View activePanel={activePanel}>
                 <Sportfitnes id="home" go={go} />
-                <Allbody id="allbody" go={go} />
+                <Allbody id="popout" go={go} />
                 <AllbodyArms id="arms1" go={go} />
                 <AllbodyBack id="back1" go={go} />
                 <AllbodyButtocks id="buttocks1" go={go} />
@@ -68,6 +68,7 @@ const App = () => {
       </AdaptivityProvider>
     </ConfigProvider>
   );
+
 };
 
 export default App;

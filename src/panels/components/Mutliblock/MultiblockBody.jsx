@@ -5,11 +5,11 @@ import Lesson1 from '../../../img/Chest.png'
 const FullBody = ({go}) =>{
     return(
         <Group
-        style={{ marginInline: 20, paddingTop: 20, background: "#7B7B7B" }}
-        header={<Header mode="primary">Тренировки для всего тела</Header>}
+        style={{ marginInline: 20, paddingTop: 20, marginBottom: 10 }}
+        header={<Header mode="primary" className="marginMain">Тренировки для всего тела</Header>}
       >
         <div className="up_panel">
-          <div>
+          <div className="margin">
             <p>упражнений: 7</p>
           </div>
           <div>
@@ -17,14 +17,14 @@ const FullBody = ({go}) =>{
           </div>
         </div>
 
-        <div>
+        <div className="margin">
           <p>Берпи</p>
           <p>Ягодичный мостик с резинкой</p>
           <p>Боковые выпады</p>
         </div>
 
         <div className="down_panel">
-          <Button onClick={go} data-to="allbody">
+          <Button onClick={go} data-to="popout" className="MainBt">
             Смотреть всё
           </Button>
         </div>

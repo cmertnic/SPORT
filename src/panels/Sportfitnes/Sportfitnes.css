@@ -15,3 +15,6 @@
 cursor: pointer;
 }
 
+.panel-back{
+    background: url("../../img/background.svg")
+}
