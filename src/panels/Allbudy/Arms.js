@@ -38,13 +38,13 @@ const Arms1 = ({ go, id }) => {
 
         <div style={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center",textAlign:"center" }}>
 
-            <div className="qwerty"><p>отжимания от скамьи</p></div>
+            <div className="qwerty"><p>Отжимания от скамьи</p></div>
 
-            <div className="qwerty"><p>планка на коленях с подъемом рук к плечам</p></div>
+            <div className="qwerty"><p>Планка с подъемом рук</p></div>
 
-            <div className="qwerty"><p>сгибания и разгибания запястий</p></div>
+            <div className="qwerty"><p>Сгибания и разгибания запястий</p></div>
 
-            <div className="qwerty"><p>разгибания гантелей из-за головы</p></div>
+            <div className="qwerty"><p>Разгибания гантелей из-за головы</p></div>
 
             <div className="qwerty"><p>Обратные отжимания от скамьи</p></div>
 
@@ -53,7 +53,7 @@ const Arms1 = ({ go, id }) => {
             <div className="qwerty"><p>Отжимания на пальцах</p></div>
 
           <div style={{display: "flex", justifyContent: "center"}}>
-            <Button hoverMode="#red" style={{width:"220",height:"48",size:'l',borderRadius:"10",  background:"#2FAF24",fontSize:"24",cursor:"pointer"  }}
+            <Button hoverMode="#red"
               className="Modal_button"
                 onClick={() => {
                   setPopout(
@@ -62,7 +62,7 @@ const Arms1 = ({ go, id }) => {
                     />
                   );
                 }}>
-                START
+                Начать
               </Button>
           </div>
 

@@ -9,12 +9,24 @@
     align-items: center;
 }
 .Modal_button{
-    background: #094204;
+    background-color: #094204;
     size: l;
+    margin-top: 20px;
+    width: 220px;
+    height: 48px;
+    border-radius: 10px;
+    font-size: 32px;
+    cursor: pointer;
+    margin-bottom: 50px;
 }
 .Modal_button:hover{
-    background-color:#094204;
+    background-color:#2f68aa;
+    color: #D9D9D9;
     
+}
+.Modal_button:active{
+    background-color:#2f68aa;
+    color: #D9D9D9;
 }
 .Panel{
     height: 850px;

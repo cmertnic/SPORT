@@ -53,7 +53,7 @@ const pres1 = ({ go, id }) => {
           <div className="qwerty"><p>Повороты корпуса в планке на локтях</p></div>
 
           <div style={{display: "flex", justifyContent: "center"}}>
-            <Button hoverMode="#red" style={{width:"220",height:"48",size:'l',borderRadius:"10",  background:"#2FAF24",fontSize:"24",cursor:"pointer"  }}
+            <Button hoverMode="#red"
               className="Modal_button"
                 onClick={() => {
                   setPopout(
@@ -62,7 +62,7 @@ const pres1 = ({ go, id }) => {
                     />
                   );
                 }}>
-                START
+                Начать
               </Button>
           </div>
 

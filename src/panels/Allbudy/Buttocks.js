@@ -49,19 +49,19 @@ const buttocks1 = ({ go, id }) => {
 
            <div className="qwerty"><p>Мостик с поднятой ногой</p></div>
 
-         <div style={{display: "flex", justifyContent: "center"}}>
-           <Button hoverMode="#red" style={{width:"220",height:"48",size:'l',borderRadius:"10",  background:"#2FAF24",fontSize:"24",cursor:"pointer"  }}
-             className="Modal_button"
-               onClick={() => {
-                 setPopout(
-                   <OpenButtocks
-                   onClose={()=>setPopout(null)}
-                   />
-                 );
-               }}>
-               START
-             </Button>
-         </div>
+           <div style={{display: "flex", justifyContent: "center"}}>
+            <Button hoverMode="#red"
+              className="Modal_button"
+                onClick={() => {
+                  setPopout(
+                    <OpenButtocks
+                    onClose={()=>setPopout(null)}
+                    />
+                  );
+                }}>
+                Начать
+              </Button>
+          </div>
 
        </div>
          {/* <div style={{display: "flex", justifyContent: "center"}}>

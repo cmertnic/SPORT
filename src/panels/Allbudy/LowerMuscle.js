@@ -13,7 +13,7 @@ import {
 import "./../hub.css";
 import "./Allbudy.css";
 import Footer1 from "../components/Footer/FooterM";
-import Open1 from '../components/Modal1/OpenPres'
+import OpenLowerMuscle from '../components/Modal1/OpenLowerMuscle'
 
 const lowermuscle1 = ({ go, id }) => {
   const [popout, setPopout] = useState(null);
@@ -53,16 +53,16 @@ const lowermuscle1 = ({ go, id }) => {
           <div className="qwerty"><p>Махи ногами назад</p></div>
 
           <div style={{display: "flex", justifyContent: "center"}}>
-            <Button hoverMode="#red" style={{width:"220",height:"48",size:'l',borderRadius:"10",  background:"#2FAF24",fontSize:"24",cursor:"pointer"  }}
+            <Button hoverMode="#red"
               className="Modal_button"
                 onClick={() => {
                   setPopout(
-                    <Open1
+                    <OpenLowerMuscle
                     onClose={()=>setPopout(null)}
                     />
                   );
                 }}>
-                START
+                Начать
               </Button>
           </div>
 

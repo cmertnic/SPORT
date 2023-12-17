@@ -1,15 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.ae3684a6.css",
-    "main.js": "/static/js/main.8f287647.js",
+    "main.css": "/static/css/main.55f9f4bb.css",
+    "main.js": "/static/js/main.06a11aba.js",
     "static/media/rezinka_most.gif": "/static/media/rezinka_most.3c3982e4fd3d0e6401c2.gif",
     "static/media/planka.gif": "/static/media/planka.015c5e7de7eb7c78da79.gif",
     "static/media/prisedsvipadom.gif": "/static/media/prisedsvipadom.fcf8cdd1106d6f14a45e.gif",
+    "static/media/Podtyagivania.gif": "/static/media/Podtyagivania.9b27f14e4c42eccfe060.gif",
     "static/media/uprazhnenie-berpi-vashsport.com_.gif": "/static/media/uprazhnenie-berpi-vashsport.com_.968b58aabfa97d0a20a9.gif",
     "static/media/prisedsvitrukami.gif": "/static/media/prisedsvitrukami.ed3aec6b11841a8d50ff.gif",
+    "static/media/prisedania.gif": "/static/media/prisedania.4582d955517919b7905b.gif",
     "static/media/background.svg": "/static/media/background.842478674de7d79da1985d278883516a.svg",
     "static/media/maxinogami.gif": "/static/media/maxinogami.ced81818d10e3be87505.gif",
+    "static/media/Tyaga-ganteli-odnoy-rukoy.gif": "/static/media/Tyaga-ganteli-odnoy-rukoy.5d83cbf7fec8bcaa8e30.gif",
+    "static/media/Stulchik_s_podemom_nog.gif": "/static/media/Stulchik_s_podemom_nog.a8b4707e8e51849b26ed.gif",
+    "static/media/PrisedPuls.gif": "/static/media/PrisedPuls.438657a200e3f84fa573.gif",
+    "static/media/Vypad_otvedenie_nogi_nazad_2.gif": "/static/media/Vypad_otvedenie_nogi_nazad_2.85be5a77aaaad6413bae.gif",
+    "static/media/Podem_ruki_pered_soboj.gif": "/static/media/Podem_ruki_pered_soboj.2580acc7f4c8e206961a.gif",
+    "static/media/Prisidanie_prisedanie_pryzhok.gif": "/static/media/Prisidanie_prisedanie_pryzhok.f83c9a0d1433fb456892.gif",
+    "static/media/Skruchivania.gif": "/static/media/Skruchivania.97afd438dcad7ce80280.gif",
     "static/media/tiagabedro.gif": "/static/media/tiagabedro.7ce8cab5f341cf440721.gif",
+    "static/media/Planka.gif": "/static/media/Planka.6f702f0bdbeac5965185.gif",
+    "static/media/Razvedenie_ruk_v_naklone.gif": "/static/media/Razvedenie_ruk_v_naklone.aedb110fe78ec3e34bb4.gif",
+    "static/media/Otzhimania.gif": "/static/media/Otzhimania.cebd537cf3d249d892d2.gif",
+    "static/media/Podem_na_cypochkah_pulsacia.gif": "/static/media/Podem_na_cypochkah_pulsacia.0436970317165f8a22d1.gif",
+    "static/media/Podtygivanie_nog_polusidya.gif": "/static/media/Podtygivanie_nog_polusidya.7ad49562c9775b5d6432.gif",
     "static/media/Buts.png": "/static/media/Buts.3df727cf8d97f6b7fe97.png",
     "static/media/Arm.png": "/static/media/Arm.5f9ac27080839541790a.png",
     "static/media/Back.png": "/static/media/Back.222a99992ca7c7ea6dca.png",
@@ -19,11 +33,11 @@
     "static/media/Profile.svg": "/static/media/Profile.d09dd410e27f8ef6cf9848c1312b8feb.svg",
     "static/media/Home.svg": "/static/media/Home.a025433764d63b3216ec3a2fb9f604e4.svg",
     "index.html": "/index.html",
-    "main.ae3684a6.css.map": "/static/css/main.ae3684a6.css.map",
-    "main.8f287647.js.map": "/static/js/main.8f287647.js.map"
+    "main.55f9f4bb.css.map": "/static/css/main.55f9f4bb.css.map",
+    "main.06a11aba.js.map": "/static/js/main.06a11aba.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae3684a6.css",
-    "static/js/main.8f287647.js"
+    "static/css/main.55f9f4bb.css",
+    "static/js/main.06a11aba.js"
   ]
 }

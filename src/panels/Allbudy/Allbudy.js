@@ -29,7 +29,7 @@ const Allbody = ({ go, id }) => {
       </PanelHeader>
 
       <Group style={{ marginInline: 20, paddingTop: 20,}}
-        header={<Header mode="primary" style={{ fontSize: 34, display: "flex", justifyContent: "center" }}>Тренировки для всего тела</Header>}
+        header={<Header mode="primary" style={{ fontSize: 34, fontWeight: 600,display: "flex", justifyContent: "center" }}>Тренировки для всего тела</Header>}
       >
         
         <div>
@@ -53,16 +53,11 @@ const Allbody = ({ go, id }) => {
           <div className="qwerty"><p>Приседания с вытянутыми руками</p></div>
 
           <div style={{display: "flex", justifyContent: "center"}}>
-            <Button hoverMode="#red" style={{width:"220",height:"48",size:'l',borderRadius:"10",  background:"#2FAF24",fontSize:"24",cursor:"pointer"  }}
+            <Button hoverMode="#red"
               className="Modal_button"
-                onClick={() => {
-                  setPopout(
-                    <Open1
-                    onClose={()=>setPopout(null)}
-                    />
-                  );
+                onClick={() => { setPopout (<Open1 onClose={()=>setPopout(null)}/>);
                 }}>
-                START
+                Начать
               </Button>
           </div>
 

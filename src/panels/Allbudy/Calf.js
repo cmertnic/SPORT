@@ -38,9 +38,9 @@ const calf1 = ({ go, id }) => {
 
        <div style={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center",textAlign:"center" }}>
 
-           <div className="qwerty"><p>Приседания на одной ноге</p></div>
+           <div className="qwerty"><p>Прыжки из приседа</p></div>
 
-           <div className="qwerty"><p>Жим платформы носками</p></div>
+           <div className="qwerty"><p>Стульчик с поднятием ног</p></div>
 
            <div className="qwerty"><p>Подъем на носки сидя</p></div>
 
@@ -52,19 +52,19 @@ const calf1 = ({ go, id }) => {
 
            <div className="qwerty"><p>Пистолетик</p></div>
 
-         <div style={{display: "flex", justifyContent: "center"}}>
-           <Button hoverMode="#red" style={{width:"220",height:"48",size:'l',borderRadius:"10",  background:"#2FAF24",fontSize:"24",cursor:"pointer"  }}
-             className="Modal_button"
-               onClick={() => {
-                 setPopout(
-                   <OpenCalf
-                   onClose={()=>setPopout(null)}
-                   />
-                 );
-               }}>
-               START
-             </Button>
-         </div>
+           <div style={{display: "flex", justifyContent: "center"}}>
+            <Button hoverMode="#red"
+              className="Modal_button"
+                onClick={() => {
+                  setPopout(
+                    <OpenCalf
+                    onClose={()=>setPopout(null)}
+                    />
+                  );
+                }}>
+                Начать
+              </Button>
+          </div>
 
        </div>
          {/* <div style={{display: "flex", justifyContent: "center"}}>
