@@ -15,6 +15,18 @@
 cursor: pointer;
 }
 
+@media (min-width:900px){
 .panel-back{
-    background: url("../../img/background.svg")
+    background: url("../../img/background.svg");
 }
+}
+
+
+@media (max-width:900px){
+
+    .vkui, .vkui>body {
+        background: url("../../img/background.svg");
+    }
+}
+
+    

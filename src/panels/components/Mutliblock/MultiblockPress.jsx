@@ -1,40 +1,45 @@
 import React, { useState } from "react";
-import { Group, Button, Header,} from "@vkontakte/vkui";
-import "./Multiblok.css"
-import Pres from '../../../img/Chest.png'
-const Press = ({go}) =>{
-    return(
-        <Group
-        style={{ marginInline: 20, paddingTop: 20, marginBottom: 10  }}
-        header={<Header mode="primary" className="marginMain">Тренировки для пресса</Header>}
-      >
-        <div className="up_panel">
-          <div className="margin">
-            <p>упражнений: 7</p>
-          </div>
-          <div>
-            <img className="musckle_img" src={Pres} alt="Pres" />
-          </div>
-        </div>
-
+import { Group, Button, Header } from "@vkontakte/vkui";
+import "./Multiblok.css";
+import Pres from "../../../img/Chest.png";
+const Press = ({ go }) => {
+  return (
+    <Group
+    separator="show"
+      className = "MainGroup"
+      header={
+        <Header mode="primary" className="marginMain">
+          Тренировки для пресса
+        </Header>
+      }
+    >
+      <div className="up_panel">
         <div className="margin">
+          <p>Упражнений: 7</p>
+        </div>
+        <div>
+          <img className="musckle_img musckle_img_border" src={Pres} alt="Pres" />
+        </div>
+      </div>
+
+      <div className="margin">
         <p>Скручивание с подъемом колен</p>
         <p>Складка с подтягиванием ног</p>
         <p>Шаги из планки в четвереньки</p>
-        </div>
+      </div>
 
-        <div className="down_panel">
-          <Button onClick={go} data-to="pres1" className="MainBt">
-            Смотреть всё
-          </Button>
-        </div>
-      </Group>  
-    )
-}
+      <div className="down_panel">
+        <Button onClick={go} data-to="pres1" className="MainBt">
+          Смотреть всё
+        </Button>
+      </div>
+    </Group>
+  );
+};
 
 export default Press;
 
-// <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}} 
+// <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}}
 // header={<Header mode="primary">Тренировки для Плечь</Header>}>
 //   <div>
 //   <p>упражнений: 5</p>
@@ -45,11 +50,11 @@ export default Press;
 //   <p>Тяга на дельтовидные мышцы сидя (гантели)</p>
 // </div>
 // <div style={{ display:"flex", justifyContent:"right" }}>
-// <SimpleCell>{"Смотреть всё"}</SimpleCell>   
+// <SimpleCell>{"Смотреть всё"}</SimpleCell>
 // </div>
 // </Group>
 
-// <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}} 
+// <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}}
 // header={<Header mode="primary">Тренировка для рук</Header>}>
 //   <div>
 //   <p>упражнений: 6</p>
@@ -60,11 +65,11 @@ export default Press;
 //   <p>экстензия трицепсовв над головой (гантели)</p>
 // </div>
 // <div style={{ display:"flex", justifyContent:"right" }}>
-// <SimpleCell>{"Смотреть всё"}</SimpleCell>   
-// </div>     
+// <SimpleCell>{"Смотреть всё"}</SimpleCell>
+// </div>
 // </Group>
 
-// <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}} 
+// <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}}
 // header={<Header mode="primary">тренировки для спины</Header>}>
 //   <div>
 //   <p>упражнений: 5</p>
@@ -75,28 +80,28 @@ export default Press;
 //   <p>подъём плеч (гантели)</p>
 // </div>
 // <div style={{ display:"flex", justifyContent:"right" }}>
-// <SimpleCell>{"Смотреть всё"}</SimpleCell>   
+// <SimpleCell>{"Смотреть всё"}</SimpleCell>
 // </div>
 
 // </Group>
 
-// <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}} 
+// <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}}
 // header={<Header mode="primary">тренировки для пресса</Header>}>
 //   <div>
 //   <p>упражнений: 6</p>
 //   </div>
 // <div>
-  // <p>Скручивание с подъемом колен</p>
-  // <p>Складка с подтягиванием ног</p>
-  // <p>Шаги из планки в четвереньки</p>
+// <p>Скручивание с подъемом колен</p>
+// <p>Складка с подтягиванием ног</p>
+// <p>Шаги из планки в четвереньки</p>
 // </div>
 // <div style={{ display:"flex", justifyContent:"right" }}>
-// <SimpleCell>{"Смотреть всё"}</SimpleCell>   
+// <SimpleCell>{"Смотреть всё"}</SimpleCell>
 // </div>
 
 // </Group>
 
-// <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}} 
+// <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}}
 // header={<Header mode="primary">Тренировки для нижней группы мышц</Header>}>
 //   <div>
 //   <p>упражнений: 7</p>
@@ -107,12 +112,12 @@ export default Press;
 //   <p>Махи назад</p>
 // </div>
 // <div style={{ display:"flex", justifyContent:"right" }}>
-// <SimpleCell>{"Смотреть всё"}</SimpleCell>   
+// <SimpleCell>{"Смотреть всё"}</SimpleCell>
 // </div>
 
 // </Group>
 
-// <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}} 
+// <Group style={{marginInline:20, paddingTop:20, background:"#7B7B7B"}}
 // header={<Header mode="primary">Тренировка для ягодицы</Header>}>
 //   <div>
 //   <p>упражнений: 6</p>
@@ -123,7 +128,7 @@ export default Press;
 //   <p> Широкий присед + выпад по диагонали</p>
 // </div>
 // <div style={{ display:"flex", justifyContent:"right" }}>
-// <SimpleCell>{"Смотреть всё"}</SimpleCell>   
+// <SimpleCell>{"Смотреть всё"}</SimpleCell>
 // </div>
 
 // </Group>
@@ -139,5 +144,5 @@ export default Press;
 //   <p>Подъем на носки сидя</p>
 // </div>
 // <div style={{ display:"flex", justifyContent:"right" }}>
-// <SimpleCell>{"Смотреть всё"}</SimpleCell>   
+// <SimpleCell>{"Смотреть всё"}</SimpleCell>
 // </div>

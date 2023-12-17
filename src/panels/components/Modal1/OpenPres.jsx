@@ -1,8 +1,8 @@
 import { Button, PopoutWrapper } from "@vkontakte/vkui";
 import React, { useState, useEffect } from 'react';
 import Berpie from "../../../img/gif/uprazhnenie-berpi-vashsport.com_.gif"
-
-
+import Skruchivania from "../../../img/PresGif/Skruchivania.gif"
+import Podtygivanie from "../../../img/PresGif/Podtygivanie_nog_polusidya.gif"
 
 
 const Timer = () => {
@@ -10,16 +10,16 @@ const Timer = () => {
   
   const [isRunning, setIsRunning] = useState(false);
 
-  const [currentImage, setCurrentImage] = useState(Berpie);
+  const [currentImage, setCurrentImage] = useState(Skruchivania);
 
   const [count, setCount] = useState(0);
 
   useEffect(() => {
     if (time <= 30 * 60 && time >= 25 * 60) {
-      setCurrentImage(Berpie);
+      setCurrentImage(Skruchivania);
       setCount(setCount + 1);
     } else if (time <= 25 * 60 && time >= 20 * 60) {
-      setCurrentImage(Berpie);
+      setCurrentImage(Podtygivanie);
       setCount(setCount + 1);
     } else if (time <= 20 * 60 && time >= 15 * 60) {
       setCurrentImage(Berpie);

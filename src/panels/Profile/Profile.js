@@ -1,7 +1,7 @@
-import Qwerty from './../components/Modal1/Open1.jsx'
+import Qwerty from "./../components/Modal1/Open1.jsx";
 
 import React, { useState } from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import {
   Panel,
   PanelHeader,
@@ -18,7 +18,6 @@ import {
   View,
   Cell,
   Avatar,
-  
 } from "@vkontakte/vkui";
 import "./../hub.css";
 import "./Profile.css";
@@ -41,23 +40,22 @@ const Prof = ({ go, fetchedUser }) => {
         <p style={{ display: "flex", justifyContent: "left" }}>Профиль</p>
       </PanelHeader>
 
-      <Group
-
-        style={{ marginInline: 20, paddingTop: 20}}>     
+      <Group className="user_pading">
         <Cell
-				before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null}
-				subtitle={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}>
-				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
-			</Cell>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            paddingTop: 20,
-          }}
+          before={
+            fetchedUser.photo_200 ? (
+              <Avatar src={fetchedUser.photo_200} />
+            ) : null
+          }
+          subtitle={
+            fetchedUser.city && fetchedUser.city.title
+              ? fetchedUser.city.title
+              : ""
+          }
         >
+          {`${fetchedUser.first_name} ${fetchedUser.last_name}`}
+        </Cell>
+        <div className="static_padding">
           <div
             style={{
               display: "flex",
@@ -85,21 +83,22 @@ const Prof = ({ go, fetchedUser }) => {
               borderBottomRightRadius: 5,
             }}
           >
-            
-
             {/* Статистика */}
             <div
               style={{
                 display: "flex",
                 alignItems: "left",
                 flexDirection: "column",
+                justifyContent: "center",
                 width: 340,
                 height: 345,
+                paddingLeft: 25
               }}
             >
-
               <p>Пройдено занятий: 3</p>
               <p>Выполненно упражнений: 18</p>
+              <p>Проработанно часов: 28</p>
+              <p>Сброшенно каллорий: 18кг</p>
             </div>
           </div>
         </div>
@@ -111,16 +110,16 @@ const Prof = ({ go, fetchedUser }) => {
 };
 
 Prof.propTypes = {
-	id: PropTypes.string.isRequired,
-	go: PropTypes.func.isRequired,
-	fetchedUser: PropTypes.shape({
-		photo_200: PropTypes.string,
-		first_name: PropTypes.string,
-		last_name: PropTypes.string,
-		city: PropTypes.shape({
-			title: PropTypes.string,
-		}),
-	}),
+  id: PropTypes.string.isRequired,
+  go: PropTypes.func.isRequired,
+  fetchedUser: PropTypes.shape({
+    photo_200: PropTypes.string,
+    first_name: PropTypes.string,
+    last_name: PropTypes.string,
+    city: PropTypes.shape({
+      title: PropTypes.string,
+    }),
+  }),
 };
 
 export default Prof;
